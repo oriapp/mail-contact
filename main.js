@@ -1,4 +1,4 @@
-console.log('dddddddddddd')
+console.log('Hello World')
 
 $(document).ready(function () {
     $(`.submit`).click(function (event) {
@@ -11,14 +11,14 @@ $(document).ready(function () {
         statusElm.empty()
         
         if (email.length > 5 && email.includes(`@`) && email.includes(`.`)) {
-            statusElm.append(`<div>Email is valid</div>`)
+            statusElm.append(`<div>Email is valid &#10004;</div>`)
         } else {
             event.preventDefault()
             statusElm.append(`<div>Email is not valid</div>`)
         }
         
         if (subject.length >= 2) {
-            statusElm.append(`<div>Subject is valid</div>`)
+            statusElm.append(`<div>Subject is valid &#10004;</div>`)
         }
         else {
             event.preventDefault()
@@ -26,7 +26,7 @@ $(document).ready(function () {
         }
 
         if (message.length >= 10) {
-            statusElm.append(`<div>Message is valid</div>`)
+            statusElm.append(`<div>Message is valid &#10004;</div>`)
         } else {
             event.preventDefault()
             statusElm.append(`<div>Message is not valid</div>`)
@@ -35,8 +35,3 @@ $(document).ready(function () {
         
     })
 })
-
-
-
-
-©Code by Ori Appelbaum
